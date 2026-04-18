@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = "8278824209:AAGJNf1sPQE8IMI0Q9pFejpNkkxFoO28jh8"
-OWNER_ID = 123456789
+OWNER_ID = "Legislative"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
