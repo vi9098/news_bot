@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = os.getenv("8278824209:AAGJNf1sPQE8IMI0Q9pFejpNkkxFoO28jh8")
-OWNER_ID = "Legislative"
+OWNER_ID = "Legislative😘😘"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -147,7 +147,7 @@ def send_news(chat_id):
 🌐 {article['source']}
 🔗 {article['url']}
 
-👤 Owner: tg://user?id={OWNER_ID}
+👤 Owner: id={OWNER_ID}
 """
 
         try:
