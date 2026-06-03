@@ -10,10 +10,14 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = "YOUR_ACTUAL_BOT_TOKEN"
 print(repr(BOT_TOKEN))
-bot = telebot.TeleBot(BOT_TOKEN)
+
 OWNER_ID = "Legislative😘😘"
 
 bot = telebot.TeleBot(BOT_TOKEN)
+HEADERS = {
+    "User-Agent": "Mozilla/5.0"
+}
+requests.get(url, headers=HEADERS, timeout=10)
 
 # ===== FILES =====
 CHANNEL_FILE = "channels.json"
@@ -185,7 +189,7 @@ def cb(call):
     send_news(call.message.chat.id)
 
 # ===== TRACK CHANNEL =====
-@bot.my_chat_member_handler()
+@bot.my_chat_member_handler(func=lambda _: True)
 def track(update):
     chat = update.chat
     status = update.new_chat_member.status
