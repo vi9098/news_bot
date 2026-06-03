@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = "YOUR_ACTUAL_BOT_TOKEN"
+print(repr(BOT_TOKEN))
 bot = telebot.TeleBot(BOT_TOKEN)
 OWNER_ID = "Legislative😘😘"
 
